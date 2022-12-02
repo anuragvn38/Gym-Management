@@ -1,0 +1,810 @@
+*{
+	font-family: "SF Pro Display", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.banner{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("wallpaper.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.gymlogo{
+cursor: pointer;
+text-decoration: none;
+color: white;
+}
+
+.gymlogo:hover{
+color: #fae9d7;
+transition: 1s;
+}
+
+
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+}
+
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #eb7d07;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+	width: 100%;
+}
+
+.navbar{
+	animation: fadeInLeftAnimationnav ease 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeInLeftAnimationnav {
+	0% {
+		opacity: 0;
+		padding-right: 20px;
+	}
+	100% {
+		opacity: 1;
+		padding-right: 0px;
+	}
+}
+
+
+
+/*
+
+
+
+
+
+
+SIGN IN/ HOME PAGE
+
+
+
+
+
+
+*/
+
+
+.signinform{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 70vh;
+	color: white;
+}
+
+.signinform{
+	animation: fadeInLeftAnimation ease 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeInLeftAnimation {
+	0% {
+		padding-right: 400px;
+		opacity: 0;
+	}
+	100% {
+		padding-right: 0px;
+		opacity: 1;
+	}
+}
+
+
+.signinform h2{
+	margin-top: 10px;
+}
+
+input{
+	display: block;
+	width: 350px;
+	height: 40px;
+	margin: 20px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	color: white;
+	border-bottom: 1px solid gray;
+	background: transparent;
+}
+
+input:focus{
+	border-bottom: 2px solid rgb(212, 212, 212);
+}
+
+button{
+	width: 350px;
+	height: 40px;
+	margin: 20px;
+	background-color: #fae9d8;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+#alreadytext {
+	margin-top: 10px;
+	text-decoration: underline;
+	background: transparent;
+	color: white;
+	cursor: pointer;
+}
+
+button:hover{
+background-color: #eb7d07;
+transition: 0.5s;
+}
+
+.signin h1{
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+
+
+
+/*
+
+
+
+SIGN UP PAGE
+
+
+
+
+*/
+
+
+.signupform{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 80vh;
+	color: white;
+}
+
+.signupform{
+	animation: fadeInLeftAnimation ease 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeInLeftAnimation {
+	0% {
+		padding-right: 400px;
+		opacity: 0;
+	}
+	100% {
+		padding-right: 0px;
+		opacity: 1;
+	}
+}
+
+.signup{
+	margin-top: 10px;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 25px #eb7d07;
+}
+
+h1.signupform{
+	margin-top: 10px;
+}
+
+input{
+	display: block;
+	width: 350px;
+	height: 40px;
+	margin: 20px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	color: white;
+	border-bottom: 1px solid gray;
+	background: transparent;
+}
+
+input:focus{
+	border-bottom: 2px solid rgb(212, 212, 212);
+}
+
+button{
+	width: 350px;
+	height: 40px;
+	margin: 20px;
+	background-color: #fae9d8;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+#alreadytext {
+	margin-top: 10px;
+	text-decoration: underline;
+	background: transparent;
+	color: #c9c9c9;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+button:hover{
+background-color: #eb7d07;
+transition: 0.5s;
+}
+
+.signup h1{
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+
+
+
+
+/*
+
+
+
+CONTACT PAGE
+
+
+
+*/
+
+
+
+
+.contactus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 80vh;
+	color: white;
+}
+
+.contactinfo{
+	margin-top: 10px;
+	text-align: center;
+}
+
+input{
+	display: block;
+	width: 350px;
+	height: 40px;
+	margin: 20px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	color: white;
+	border-bottom: 1px solid gray;
+	background: transparent;
+}
+
+#submitmsg{
+	width: 350px;
+	height: 40px;
+	margin: 20px;
+	background-color: #fae9d8;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+#areatext{
+	color: white;
+	font-size: 20px;
+	width: 350px;
+	height: 70px;
+	margin: 20px;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+.contactus{
+		animation: fadeInLeftAnimation ease 1.5s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+}
+
+
+/*
+
+
+ABOUT PAGE
+
+
+*/
+
+#about{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	align-content: center;
+}
+
+.aboutdata {
+	color: white;
+	width: 70%;
+	margin-left: 200px;
+	font-size: 20px;
+	text-align: center;
+	align-content: center;
+}
+
+/*
+
+
+DASHBOARD PAGE
+
+
+*/
+
+
+.sidebar{
+	width: 5px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	background: #eb7d07;
+	position: fixed;
+	color: white;
+	font-size: 22px;
+	box-shadow: 0px 0px 25px #000000;
+	justify-content: space-between;
+	transition: ease 0.5s;
+} 
+
+.sidebar .list{
+	opacity: 0;
+	padding: 70px 0;
+}
+
+.sidebar .list li{
+	margin: 8px 0;
+	list-style-type: none;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+}
+
+.sidebar .list li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 8px 16px;
+	color: white;
+	font-weight: bold;
+}
+
+.sidebar:hover{
+	width: 14%;
+	transition: ease 0.8s;
+}
+
+.sidebar .list:hover{
+	transition: 0.5s;
+	transition-delay: 0.3s;
+	opacity: 100%;
+}
+
+.sidebar .list a:hover{
+	color: wheat;
+	transition: 0.2s;
+}
+
+button:hover{
+transition: 0.5s;
+background-color: #eb7d07;
+transition: 0.5s ease;
+}
+
+#myprofile{
+	margin-left: 250px;
+	color: white;
+	width: 800px;
+	height: 450px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#myprofile, #trainers, #members, #attendance, #routine, #bmi, .navbar{
+	animation: fadeInAnimation ease 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.avatar{
+	background: #fff;
+	box-shadow: 0 0 25px black;
+	height: 350px;
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-size: 22px;
+	color: black;
+}
+
+.avatar .pic{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	width: 80px;
+	height: 80px;
+}
+
+#avatarform p{
+	display:block;
+	margin: 10px;
+	width: 250px;
+	height: 30px;
+	font-size: 20px;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+#members{
+	margin-left: 250px;
+	background: #a1a1a1;
+	box-shadow: 0 0 25px black;
+	width: 800px;
+	height: 450px;
+	font-size: 20px;
+	position: relative;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+#memdiv{
+	width: 800px;
+	height: 450px;
+}
+
+#memlist{
+	width: 800px;
+	height: 450px;
+	display: grid; 
+	grid-template-columns: 30% 30% 30%;
+	justify-content: space-between;
+	overflow: auto;
+	overflow-y: scroll;
+	scrollbar-color:  transparent #a1a1a1;
+	scrollbar-width: 20px;
+}	
+
+#memlist li{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 20px;
+	display: block;
+}
+
+#memlist li .memcard{
+	background: white;
+	font-size: 24px;
+	margin: 25px;
+	height: 100px;
+	width: 200px;
+	box-shadow: 0 0 10px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#trainers{
+	margin-left: 250px;
+	background: transparent;
+	width: 800px;
+	height: 450px;
+	position: relative;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#attendance{
+	margin-left: 250px;
+	background: whitesmoke;
+	box-shadow: 0 0 25px black;
+	width: 800px;
+	height: 450px;
+	position: relative;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+#routine{
+	margin-left: 250px;
+	background: whitesmoke;
+	box-shadow: 0 0 25px black;
+	width: 900px;
+	height: 450px;
+	position: relative;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+#routine {
+	background: url(https://images.squarespace-cdn.com/content/v1/58d2a0af5016e17768a5b6d7/1546492068212-VN314C48M58MVRGOJI02/ke17ZwdGBToddI8pDm48kB8PkaDLcRA0BPtzN76vEaEUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKceCekXzsUmoB4aApu4_m2FNOLtX9RRcI1ekLyhjPRnitML0DTgJzAHRefhNm3JV58/Screen+Shot+2019-01-03+at+12.07.24+AM.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#bmi{
+	margin-left: 250px;
+	background: whitesmoke;
+	box-shadow: 0 0 25px black;
+	width: 800px;
+	height: 450px;
+	position: relative;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.bmiform input{
+	display: block;
+	width: 300px;
+	height: 40px;
+	margin: 2px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	color: black;
+	border-bottom: 1px solid gray;
+	background: transparent;
+}
+
+input[type=radio]{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	height: 20px;
+}
+
+input[type=submit]{
+	width: 150px;
+	height: 30px;
+	display: inline;
+	background-color: rgb(188, 135, 238);
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+input[type="reset"]{
+	width: 150px;
+	height: 30px;
+	display: inline;
+	background-color: rgb(188, 135, 238);
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+#bmi-results{
+	font-size: 30px;
+}
+
+
+/* CALENAAAAAAAAAAARRRRRRRRRRRRRRRRRRRRR*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+*[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background: #f9f9f9;
+	color: #0e171c;
+  display: grid;
+	font: 300 100%/1.5em 'Lato', sans-serif;
+	margin: 0;
+  min-height: 100vh;
+  place-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 2em;
+	line-height: 1.25em;
+	margin: .25em 0;
+}
+
+h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: .33em 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	width: 500px;
+}
+
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+	text-align: center;
+}
+
+.calendar header {
+	position: relative;
+}
+
+.calendar h2 {
+	text-transform: uppercase;
+}
+
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid #00addf;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 3em;
+	line-height: 4em;
+	text-align: center;
+	width: 3em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+
+.current-day {
+	background: #00addf;
+	color: #f9f9f9;
+}
+
+.event {
+	cursor: pointer;
+	position: relative;
+}
+
+.event:after {
+	background: #00addf;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .4em;
+	left: 50%;
+	margin-bottom: 1em;
+	position: absolute;
+	width: .4em;
+}
+
+.event.current-day:after {
+	background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 3em;
+	font-size: .75em;
+	line-height: 2em;
+	position: absolute;
+	top: 50%;
+	width: 3em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
+}

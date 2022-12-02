@@ -1,0 +1,49 @@
+.page{
+	display: flex;
+	height: 50vh;
+}
+
+.photo{
+
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	width: 370px;
+	height: 200px;
+	background: url(https://www.fearlessmotivation.com/wp-content/uploads/2016/11/time-for-war-M-new-video-simple-750x400.jpg);
+	background-size: contain;
+}
+
+.infocard{
+	margin: 50px 50px;
+	height: 350px;
+	width: 380px;
+	background: #ffab52;
+}
+
+.infocard p{
+	color: black;
+	font-size: 16px;
+    margin-left: 10px;
+}
+
+.infocard h2{
+	color: black;
+    margin-left: 10px;
+}
+
+.infocard{
+	animation: fadeInLeftAnimationnav ease 1.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeInLeftAnimationnav {
+	0% {
+		padding-right: 40px;
+		opacity: 0;
+	}
+	100% {
+		padding-right: 0px;
+		opacity: 1;
+	}
+}
